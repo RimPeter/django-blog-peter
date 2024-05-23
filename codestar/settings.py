@@ -91,7 +91,8 @@ DATABASES = {
 SECRET_KEY = os.environ.get("SECRET_KEY")
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
-    "https://*.herokuapp.com"
+    "https://*.herokuapp.com",
+    "https://8000-rimpeter-djangoblogpete-ov4906ni7ra.ws-us114.gitpod.io"
 ]
 
 # Password validation
