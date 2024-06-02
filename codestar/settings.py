@@ -90,11 +90,12 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
-SECRET_KEY = os.environ.get("SECRET_KEY")
+
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
-    "https://8000-rimpeter-djangoblogpete-ov4906ni7ra.ws-us114.gitpod.io"
+    "https://8000-rimpeter-djangoblogpete-ov4906ni7ra.ws-us114.gitpod.io",
+    "http://127.0.0.1:8000/"
 ]
 
 # Password validation
